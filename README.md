@@ -17,7 +17,7 @@ Uma das grandes desvantagens apresentadas pelos exames PCR é a sua produção e
 ## Objetivos
 O principal objetivo deste projeto é propor/desenvolver um modelo de inteligência artificial - especialmente focado em Deep Learning - capaz de detectar COVID-19 em raios-x do tórax. Ele deve ser genérico ao ponto que funcione com diferentes imagens de raio-x de diferentes equipamentos (cross-sensor invariant). Outro objetivo é a implementação do modelo de rede naural em sistema de baixo poder computacional, por exemplo, smartphones e sistemas embarcados (edge computing).
 
-## Descrição técnica da Solução
+## Solução Proposta
 
 A proposta deste projeto envolve a confecção de uma aplicação que recebe como entrada a foto de um raio-x do tórax e retorna se o indivíduo está infectado pelo vírus SARS-CoV-2, ou seja, automatiza o diagnóstico da COVID-19 por meio de radiografia, visto que existem alterações consistentes nas imagens de raio-X em indivíduos infectados [5]. A proposta envolve a criação de um sistema computacional, dividido em três módulos desacoplados: backend, website e sistema mobile. Os três módulos compõem a arquitetura do sistema em que o website e o sistema mobile são as interfaces do usuário com o sistema, e, por eles, o usuário pode fornecer a imagem - seja por um app (mobile) ou um site (website) - e receber uma resposta de diagnóstico: infectado pelo COVID-19 ou não. Essas duas interfaces comunicam com um sistema backend responsável por processar as imagens usando técnicas de Inteligência Artificial, em especial Deep Learning. A proposta visa a construção de um ambiente com load balance, em que cada requisição nova é direcionada para uma instância do backend com menos sobrecarga, garantindo alta escalabilidade.
 
@@ -25,6 +25,20 @@ O grande desafio técnico é a construção de um modelo de inteligência artifi
 
 A equipe conta com três pesquisadores, um doutor em Ciência da Computação, um Doutor em Engenharia Elétrica e um Doutorando em Ciência da Computação, todos com expertise em Deep Learning, Visão Computacional e Imagens/Sinais Médicos comprovadas por publicações científicas em grandes veículos acadêmicos internacionais [10, 11, 12 e 13]. 
 Tanto a construção da arquitetura, quanto a evolução do modelo de inferência são viáveis de serem executados em 15 dias.
+
+### Base de dados
+
+A base de dados para imagens de COVID é a COVID-19 image data collection, descrita em [9]. Ela está sendo atualizada em base diária. Além dela, seguiremos o protocolo proposto em [15], em que a base proposta em [9] é combinada com uma base de pneumonia:
+
+* https://www.kaggle.com/c/rsna-pneumonia-detection-challenge
+
+Dessa forma, a base de dados contém imagens distribuidas como na Tabela abaixo.
+
+|  Type | Normal | Pneumonia | COVID-19 | Total |
+|:-----:|:------:|:---------:|:--------:|:-----:|
+| train |  7966  |    8514   |    66    | 16546 |
+|  test |   100  |     100   |    10    |   210 |
+
 
 Referências
 
@@ -55,3 +69,5 @@ Referências
 [13] Luz, E., Moreira, G., Junior, L. A. Z., & Menotti, D. (2018). Deep periocular representation aiming video surveillance. Pattern Recognition Letters, 114, 2-12.
 
 [14] Yoon, S. H., Lee, K. H., Kim, J. Y., Lee, Y. K., Ko, H., Kim, K. H., ... & Kim, Y. H. (2020). Chest radiographic and CT findings of the 2019 novel coronavirus disease (COVID-19): analysis of nine patients treated in Korea. Korean Journal of Radiology, 21(4), 494-500.
+
+[15] Wang, L., & Wong, A. (2020). COVID-Net: A Tailored Deep Convolutional Neural Network Design for Detection of COVID-19 Cases from Chest Radiography Images. arXiv preprint arXiv:2003.09871.
