@@ -12,10 +12,10 @@ A detecção por meio do raio-x só é possível dada as anormalidades presentes
 
 ## Motivação
 
-Uma das grandes desvantagens apresentadas pelos exames PCR é a sua produção e distribuição em massa. Já as máquinas de raio-x estão presentes na maioria dos hospitais e clínicas, o que torna viável o seu uso. Além disso, o exame PCR apresenta alta taxa de falso negativos [3]. Por esse motivo, técnicas computacionais de inteligência artificial ganharam espaço e atenção para a prevenção e combate ao COVID-19. Algumas empresas começaram a implementar técnicas de inteligência artificial e de deploying em hospitais [4].
+Uma das grandes desvantagens apresentadas pelos exames PCR é a sua produção e distribuição em massa. Já as máquinas de raio-x estão presentes na maioria dos hospitais e clínicas, o que torna viável o seu uso. Além disso, o exame PCR apresenta alta taxa de falsos negativos [3]. Por esse motivo, técnicas computacionais de inteligência artificial poedm auxiliar na prevenção e combate ao COVID-19. Algumas empresas já começaram a implementar técnicas de inteligência artificial e de deploying em hospitais [4].
 
 ## Objetivos
-O principal objetivo deste projeto é propor/desenvolver um modelo de inteligência artificial - especialmente Deep Learning - capaz de detectar o vírus COVID-19 em raios-x do tórax. Ele deve ser genérico ao ponto que funcione com diferentes imagens de raio-x de diferentes equipamentos (cross-sensor invariant). Outro objetivo é a implementação da mesma rede em sistema com poder computacional  baixo, por exemplo, smartphones e sistemas embarcados (edge computing).
+O principal objetivo deste projeto é propor/desenvolver um modelo de inteligência artificial - especialmente focado em Deep Learning - capaz de detectar COVID-19 em raios-x do tórax. Ele deve ser genérico ao ponto que funcione com diferentes imagens de raio-x de diferentes equipamentos (cross-sensor invariant). Outro objetivo é a implementação do modelo de rede naural em sistema de baixo poder computacional, por exemplo, smartphones e sistemas embarcados (edge computing).
 
 ## Descrição técnica da Solução
 
