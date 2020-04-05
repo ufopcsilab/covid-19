@@ -1,12 +1,12 @@
 # covid-19
 
-Em 2020 o mundo foi acometido pelo vírus COVID-19. A taxa de transmissão está intimamente ligada a identificação de pacientes infectados, onde uma indentificação rápida e precisa diminui os impactos do vírus. Hoje uma das formas de diagnóstico é por meio dea reação em cadeia da polimerase (PCR), todavia, outras abordagens vêm surjindo, como por exemplo a detecção do corona vírus em raios-x do tórax e tomografias computadas.
+Em 2020 o mundo foi acometido pelo vírus COVID-19. A taxa de transmissão está intimamente ligada a identificação de pacientes infectados, onde uma identificação rápida e precisa diminui os impactos do vírus. Hoje uma das formas de diagnóstico é por meio de reação em cadeia da polimerase (PCR), todavia, outras abordagens vêm surgindo, como, por exemplo, a detecção do corona vírus em raios-x do tórax e tomografias computadas.
 
 A detecção por meio do raio-x só é possível dada as anormalidades presentes nas imagens [1]. Segundo os autores, os pacientes com COVID-19 na UTI apresentaram alterações no envolvimento bilateral, áreas lobulares e subsegmentares bilaterais múltiplas. Já os pacientes que não estava na UTI apresentaram alterações na opacidade bilateral e áreas subsegmentares nos exames de tomografia computadorizadas. Outros autores já demonstraram a possibilidade do diagnóstico usando imagens de raio-x [2 e 3].
 
 ## Motivação
 
-Uma das grandes desvantagens apresentadas pelos exames PCR é a sua produção e distribuição em massa. Já as máquinas de raio-x estão presentes na maioria dos hospitais e clínicas, o que torna viável o seu uso. Por esse motivo, ténicas computacionais de inteligência artificial ganharam espaço e atenção para a prevenção e combate ao COVID-19. Algumas empresas começaram a implementar técnicas de inteligência artificial e de deploying em hospitais [4].
+Uma das grandes desvantagens apresentadas pelos exames PCR é a sua produção e distribuição em massa. Já as máquinas de raio-x estão presentes na maioria dos hospitais e clínicas, o que torna viável o seu uso. Por esse motivo, técnicas computacionais de inteligência artificial ganharam espaço e atenção para a prevenção e combate ao COVID-19. Algumas empresas começaram a implementar técnicas de inteligência artificial e de deploying em hospitais [4].
 
 ## Objetivos
 O principal objetivo deste projeto é propor/desenvolver um modelo de inteligência artificial - especialmente Deep Learning - capaz de detectar o vírus COVID-19 em raios-x do tórax. Ele deve ser genérico ao ponto que funcione com diferentes imagens de raio-x de diferentes empresas. Outro objetivo é a implementação da mesma rede em sistema com poder computacional inferior, por exemplo, Apps de smartphones e sistemas embarcados.
