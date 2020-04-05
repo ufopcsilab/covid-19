@@ -1,2 +1,49 @@
 # covid-19
-Projeto relacionado ao covid-19
+
+Em 2020 o mundo foi acometido pelo vírus COVID-19. A taxa de transmissão está intimamente ligada a identificação de pacientes infectados, onde uma indentificação rápida e precisa diminui os impactos do vírus. Hoje uma das formas de diagnóstico é por meio dea reação em cadeia da polimerase (PCR), todavia, outras abordagens vêm surjindo, como por exemplo a detecção do corona vírus em raios-x do tórax e tomografias computadas.
+
+A detecção por meio do raio-x só é possível dada as anormalidades presentes nas imagens [1]. Segundo os autores, os pacientes com COVID-19 na UTI apresentaram alterações no envolvimento bilateral, áreas lobulares e subsegmentares bilaterais múltiplas. Já os pacientes que não estava na UTI apresentaram alterações na opacidade bilateral e áreas subsegmentares nos exames de tomografia computadorizadas. Outros autores já demonstraram a possibilidade do diagnóstico usando imagens de raio-x [2 e 3].
+
+## Motivação
+
+Uma das grandes desvantagens apresentadas pelos exames PCR é a sua produção e distribuição em massa. Já as máquinas de raio-x estão presentes na maioria dos hospitais e clínicas, o que torna viável o seu uso. Por esse motivo, ténicas computacionais de inteligência artificial ganharam espaço e atenção para a prevenção e combate ao COVID-19. Algumas empresas começaram a implementar técnicas de inteligência artificial e de deploying em hospitais [4].
+
+## Objetivos
+O principal objetivo deste projeto é propor/desenvolver um modelo de inteligência artificial - especialmente Deep Learning - capaz de detectar o vírus COVID-19 em raios-x do tórax. Ele deve ser genérico ao ponto que funcione com diferentes imagens de raio-x de diferentes empresas. Outro objetivo é a implementação da mesma rede em sistema com poder computacional inferior, por exemplo, Apps de smartphones e sistemas embarcados.
+
+## Descrição técnica da Solução
+
+A proposta deste projeto envolve a confecção de uma aplicação que recebe como entrada a foto de um raio-x do tórax e retorna se o indivíduo está infectado pelo vírus SARS-CoV-2, ou seja, automatiza o diagnóstico da COVID-19 por meio de radiografia, visto que existem alterações consistentes nas imagens de raio-X em indivíduos infectados [5]. A proposta envolve a criação de um sistema computacional, dividido em três módulos desacoplados: backend, website e sistema mobile. Os três módulos compõem a arquitetura do sistema em que o website e o sistema mobile são as interfaces do usuário com o sistema, e, por eles, o usuário pode fornecer a imagem - seja por um app (mobile) ou um site (website) - e receber uma resposta de diagnóstico: infectado pelo COVID-19 ou não. Essas duas interfaces comunicam com um sistema backend responsável por processar as imagens usando técnicas de Inteligência Artificial, em especial Deep Learning. A proposta visa a construção de um ambiente com load balance, em que cada requisição nova é direcionada para uma instância do backend com menos sobrecarga, garantindo alta escalabilidade.
+
+O grande desafio técnico é a construção de um modelo de inteligência artificial profundo (Deep Learning), eficiente e com baixo custo computacional para a inferência (dada uma imagem de entrada, o modelo retorna uma resposta com baixa latência e alta precisão). Deep Learning é uma das técnicas mais proeminentes no cenário de aprendizagem de máquina e hoje em dia representa o estado-da-arte para diversas tarefas de visão computacional [6]. Baseado nisso, propomos o uso de uma rede convolucional residual [7, 8], otimizada para rodar em celulares a tablets. A princípio, usaremos uma base de dados construída pelo Dr. Joseph Cohen [9] com ajuda da comunidade médica mundial. Esta base é pública e já conta com várias imagens de casos reais de COVID-19, possibilitando o treinamento de modelos de deep learning.  Contudo, acreditamos que a base de dados deve aumentar com frequência diária e assim, propomos um método de treinamento (aprendizagem) on-line para manter o modelo sempre atualizado. A construção dessa abordagem já foi iniciada e se encontra em estágio avançado. Temos até o momento um modelo que apresenta uma taxa de detecção superior a 90% dos casos de COVID-19 para a base supracitada, e uma precisão (casos classificados como COVID-19 corretamente) superior a 90%.
+
+A equipe conta com três pesquisadores, um doutor em Ciência da Computação, um Doutor em Engenharia Elétrica e um Doutorando em Ciência da Computação, todos com expertise em Deep Learning, Visão Computacional e Imagens/Sinais Médicos comprovadas por publicações científicas em grandes veículos acadêmicos internacionais [10, 11, 12 e 13]. 
+Tanto a construção da arquitetura, quanto a evolução do modelo de inferência são viáveis de serem executados em 15 dias.
+
+Referências
+
+[1] Huang, Chaolin, et al. "Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China." The Lancet 395.10223 (2020): 497-506.
+
+[2] Fang, Yicheng, et al. "Sensitivity of chest CT for COVID-19: comparison to RT-PCR." Radiology (2020): 200432.
+
+[3] Ai, Tao, et al. "Correlation of chest CT and RT-PCR testing in coronavirus disease 2019 (COVID-19) in China: a report of 1014 cases." Radiology (2020): 200642.
+
+[4] Simonite, Tom. "Chinese Hospitals Deploy AI to Help Diagnose Covid-19", Wired.com (2020).
+
+[5] Ng et al. Imaging profile of the COVID-19 infection: Radiologic findings and literature review. Radiology: Cardiothoracic Imaging, 2(1), 2020
+
+[6] Iandola, F., Moskewicz, M., Karayev, S., Girshick, R., Darrell, T., & Keutzer, K. (2014). Densenet: Implementing efficient convnet descriptor pyramids. arXiv preprint arXiv:1404.1869.
+
+[7] Pleiss, G., Chen, D., Huang, G., Li, T., van der Maaten, L., & Weinberger, K. Q. (2017). Memory-efficient implementation of densenets. arXiv preprint arXiv:1707.06990.
+
+[8] Tan, M., & Le, Q. V. (2019). Efficientnet: Rethinking model scaling for convolutional neural networks. arXiv preprint arXiv:1905.11946.
+
+[9] Cohen, J. P., Morrison, P., & Dao, L. (2020). Covid-19 image data collection. arXiv preprint arXiv:2003.11597.
+
+[10] Luz, E. J. D. S., Schwartz, W. R., Cámara-Chávez, G., & Menotti, D. (2016). ECG-based heartbeat classification for arrhythmia detection: A survey. Computer methods and programs in biomedicine, 127, 144-164.
+
+[11] Silva, P., Luz, E., Baeta, R., Pedrini, H., Falcao, A. X., & Menotti, D. (2015, August). An approach to iris contact lens detection based on deep image representations. In 2015 28th SIBGRAPI Conference on Graphics, Patterns and Images (pp. 157-164). IEEE.
+
+[12] Luz, E. J. S., Moreira, G. J., Oliveira, L. S., Schwartz, W. R., & Menotti, D. (2017). Learning deep off-the-person heart biometrics representations. IEEE Transactions on Information Forensics and Security, 13(5), 1258-1270.
+
+[13] Luz, E., Moreira, G., Junior, L. A. Z., & Menotti, D. (2018). Deep periocular representation aiming video surveillance. Pattern Recognition Letters, 114, 2-12.
