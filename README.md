@@ -1,13 +1,13 @@
 # covid-19
 
-Em 2020 o mundo foi acometido pela pandemia do COVID-19. A taxa de transmissão do vírus causador da doença é altíssima, e para conter o espalhamento de maneira eficaz, deve-se realizar uma identificação rápida e precisa dos indivíduos invefctados. Hoje uma das formas de diagnóstico é por meio de reação em cadeia da polimerase (PCR), todavia, outras abordagens vêm surgindo, como, por exemplo, a detecção do corona vírus em raios-x do tórax e tomografias computadorizadas.
+Em 2020 o mundo foi acometido pela pandemia do COVID-19. A taxa de transmissão do vírus causador da doença é altíssima, e para conter o espalhamento de maneira eficaz, deve-se realizar uma identificação rápida e precisa dos indivíduos invefctados. Hoje uma das formas de diagnóstico é por meio de reação em cadeia da polimerase (PCR), todavia, outras abordagens vêm surgindo, como, por exemplo, a detecção do corona vírus em raios-x do tórax e tomografias computadorizadas (CT).
 
 A detecção por meio do raio-x só é possível dada as anormalidades presentes nas imagens [1]. Segundo os autores, os pacientes com COVID-19 na UTI apresentaram alterações no envolvimento bilateral, áreas lobulares e subsegmentares bilaterais múltiplas. Já os pacientes que não estava na UTI apresentaram alterações na opacidade bilateral e áreas subsegmentares nos exames de tomografia computadorizadas. Outros autores já demonstraram a possibilidade do diagnóstico usando imagens de raio-x [2 e 3].
 
 <p align="center">
 	<img src="Yoon_kjr_covid_fig.png" alt="photo not available" width="70%" height="70%">
 	<br>
-	<em>Exemplo de radiografia do peito de um paciente com COVID-19 (A) e um exmeplo de CT (B). Pode-se percebr a manifestação da pneumonia em como um nódulo. Fonte: Yoon et al. (2020) [14] </em>
+	<em>Exemplo de radiografia do peito de um paciente com COVID-19 (A) e um exemplo de CT do mesmo caso (B). Pode-se percebr a manifestação da pneumonia em como um nódulo. Fonte: Yoon et al. (2020) [14] </em>
 </p>
 
 ## Motivação
