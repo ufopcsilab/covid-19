@@ -4,6 +4,12 @@ Em 2020 o mundo foi acometido pela pandemia do COVID-19. A taxa de transmissão 
 
 A detecção por meio do raio-x só é possível dada as anormalidades presentes nas imagens [1]. Segundo os autores, os pacientes com COVID-19 na UTI apresentaram alterações no envolvimento bilateral, áreas lobulares e subsegmentares bilaterais múltiplas. Já os pacientes que não estava na UTI apresentaram alterações na opacidade bilateral e áreas subsegmentares nos exames de tomografia computadorizadas. Outros autores já demonstraram a possibilidade do diagnóstico usando imagens de raio-x [2 e 3].
 
+<p align="center">
+	<img src="Yoon_kjr_covid_fig.png" alt="photo not available" width="70%" height="70%">
+	<br>
+	<em>Exemplo de radiografia do peito de um paciente com COVID-19 (A) e um exmeplo de CT (B). Pode-se percebr a manifestação da pneumonia em como um nódulo. Fonte: Yoon et al. (2020) [14] </em>
+</p>
+
 ## Motivação
 
 Uma das grandes desvantagens apresentadas pelos exames PCR é a sua produção e distribuição em massa. Já as máquinas de raio-x estão presentes na maioria dos hospitais e clínicas, o que torna viável o seu uso. Além disso, o exame PCR apresenta alta taxa de falso negativos [3]. Por esse motivo, técnicas computacionais de inteligência artificial ganharam espaço e atenção para a prevenção e combate ao COVID-19. Algumas empresas começaram a implementar técnicas de inteligência artificial e de deploying em hospitais [4].
@@ -47,3 +53,5 @@ Referências
 [12] Luz, E. J. S., Moreira, G. J., Oliveira, L. S., Schwartz, W. R., & Menotti, D. (2017). Learning deep off-the-person heart biometrics representations. IEEE Transactions on Information Forensics and Security, 13(5), 1258-1270.
 
 [13] Luz, E., Moreira, G., Junior, L. A. Z., & Menotti, D. (2018). Deep periocular representation aiming video surveillance. Pattern Recognition Letters, 114, 2-12.
+
+[14] Yoon, S. H., Lee, K. H., Kim, J. Y., Lee, Y. K., Ko, H., Kim, K. H., ... & Kim, Y. H. (2020). Chest radiographic and CT findings of the 2019 novel coronavirus disease (COVID-19): analysis of nine patients treated in Korea. Korean Journal of Radiology, 21(4), 494-500.
