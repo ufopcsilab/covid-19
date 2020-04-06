@@ -32,7 +32,7 @@ O grande desafio técnico é a construção de um modelo de inteligência artifi
 <p align="center">
 	<img src="dense_model_covid.png" alt="photo not available" width="70%" height="70%">
 	<br>
-	<em> Modelo baseado DenseNet de 4 bloos. </em>
+	<em> Modelo baseado DenseNet de 4 blocos. </em>
 </p>
 
 A equipe conta com três pesquisadores, um doutor em Ciência da Computação, um Doutor em Engenharia Elétrica e um Doutorando em Ciência da Computação, todos com expertise em Deep Learning, Visão Computacional e Imagens/Sinais Médicos comprovadas por publicações científicas em grandes veículos acadêmicos internacionais [10, 11, 12 e 13]. 
