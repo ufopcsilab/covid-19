@@ -29,8 +29,15 @@ A proposta deste projeto envolve a confecção de uma aplicação que recebe com
 
 O grande desafio técnico é a construção de um modelo de inteligência artificial profundo (Deep Learning), eficiente e com baixo custo computacional para a inferência (dada uma imagem de entrada, o modelo retorna uma resposta com baixa latência e alta precisão). Deep Learning é uma das técnicas mais proeminentes no cenário de aprendizagem de máquina e hoje em dia representa o estado-da-arte para diversas tarefas de visão computacional [6]. Baseado nisso, propomos o uso de uma rede convolucional residual [7, 8], otimizada para rodar em celulares a tablets. A princípio, usaremos uma base de dados construída pelo Dr. Joseph Cohen [9] com ajuda da comunidade médica mundial. Esta base é pública e já conta com várias imagens de casos reais de COVID-19, possibilitando o treinamento de modelos de deep learning.  Contudo, acreditamos que a base de dados deve aumentar com frequência diária e assim, propomos um método de treinamento (aprendizagem) on-line para manter o modelo sempre atualizado. A construção dessa abordagem já foi iniciada e se encontra em estágio avançado. Temos até o momento um modelo que apresenta uma taxa de detecção superior a 90% dos casos de COVID-19 para a base supracitada, e uma precisão (casos classificados como COVID-19 corretamente) superior a 90%.
 
+<p align="center">
+	<img src="dense_model_covid.png" alt="photo not available" width="70%" height="70%">
+	<br>
+	<em> Modelo baseado DenseNet de 4 bloos. </em>
+</p>
+
 A equipe conta com três pesquisadores, um doutor em Ciência da Computação, um Doutor em Engenharia Elétrica e um Doutorando em Ciência da Computação, todos com expertise em Deep Learning, Visão Computacional e Imagens/Sinais Médicos comprovadas por publicações científicas em grandes veículos acadêmicos internacionais [10, 11, 12 e 13]. 
-Tanto a construção da arquitetura, quanto a evolução do modelo de inferência são viáveis de serem executados em 15 dias.
+
+O sistema está sendo desenhado para médicos diretamente envolvidos com a pandemia de COVID-19 no Brasil e no exterior. Além de servir como um auxílio para detecção de COVID-19 durante a pandemia, a aplicação poderá ser utilizada posteriormente para acompanhamento de sequelas pulmonares em indivíduos acometidos pela doença.
 
 ### Base de dados
 
