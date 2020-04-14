@@ -1,7 +1,6 @@
 # Projeto COVID-19
 
-Baseado no trabalho Towards an Efficient Deep Learning Model for
-COVID-19 Patterns Detection in X-ray Images, disponível em [link](https://arxiv.org/pdf/2004.05717.pdf).
+### Baseado no trabalho Towards an Efficient Deep Learning Model for COVID-19 Patterns Detection in X-ray Images, disponível em [link](https://arxiv.org/pdf/2004.05717.pdf).
 
 Em 2020 o mundo foi acometido pela pandemia do COVID-19. A taxa de transmissão do vírus causador da doença é altíssima, e para conter o espalhamento de maneira eficaz, deve-se realizar uma identificação rápida e precisa dos indivíduos invefctados. Hoje uma das formas de diagnóstico é por meio de reação em cadeia da polimerase (PCR), todavia, outras abordagens vêm surgindo, como, por exemplo, a detecção do corona vírus em raios-x do tórax e tomografias computadorizadas (CT).
 
