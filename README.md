@@ -41,6 +41,18 @@ A equipe conta com três pesquisadores, um doutor em Ciência da Computação, u
 
 O sistema está sendo desenhado para médicos diretamente envolvidos com a pandemia de COVID-19 no Brasil e no exterior. Além de servir como um auxílio para detecção de COVID-19 durante a pandemia, a aplicação poderá ser utilizada posteriormente para acompanhamento de sequelas pulmonares em indivíduos acometidos pela doença.
 
+<p align="center">
+	<img src="heatmap_1.png" alt="photo not available" width="70%" height="70%">
+	<br>
+	<em> Exemplo de deteção de padrões de infecção causada pela COVI-19 (áreas opacas), com o método em estudo. </em>
+</p>
+
+<p align="center">
+	<img src="heatmap_2.png" alt="photo not available" width="70%" height="70%">
+	<br>
+	<em> Exemplos de deteção de padrões de infecções causadas pela COVID-19. </em>
+</p>
+
 ### Base de dados
 
 A base de dados para imagens de COVID é a COVID-19 image data collection, descrita em [9]. Ela está sendo atualizada em base diária. Além dela, seguiremos o protocolo proposto em [15], em que a base proposta em [9] é combinada com uma base de pneumonia:
